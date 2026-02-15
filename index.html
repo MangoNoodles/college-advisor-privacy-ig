@@ -5,51 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - College Advisor</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            color: #111827;
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+            min-height: 100vh;
         }
-        h1 { color: #3B82F6; }
-        h2 { color: #1e40af; margin-top: 30px; }
-        p { margin: 10px 0; }
-        ul { margin: 10px 0 10px 20px; }
-        .last-updated { color: #666; font-style: italic; }
-        .disclaimer { background: #fef3c7; border: 1px solid #f59e0b; padding: 15px; border-radius: 8px; margin: 20px 0; }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            border-radius: 16px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1E40AF;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: #6B7280;
+            font-size: 14px;
+        }
+
+        .disclaimer {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            border: 1px solid #F59E0B;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .disclaimer-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            color: #D97706;
+        }
+
+        .disclaimer p {
+            color: #92400E;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #3B82F6;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2 svg {
+            width: 20px;
+            height: 20px;
+            fill: #3B82F6;
+        }
+
+        p {
+            color: #4B5563;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 12px 0;
+        }
+
+        li {
+            color: #4B5563;
+            font-size: 15px;
+            padding: 8px 0 8px 28px;
+            position: relative;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: #3B82F6;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #2563EB;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #E5E7EB;
+        }
+
+        .footer p {
+            color: #9CA3AF;
+            font-size: 13px;
+        }
+
+        .app-name {
+            color: #3B82F6;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: February 15, 2026</p>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="logo">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                    </svg>
+                </div>
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Last updated: February 15, 2026</p>
+            </div>
 
-    <div class="disclaimer">
-        <strong>Heads up:</strong> I'm just a high schooler who built this app. I'll do my best to keep your data safe, but proceed at your own risk.
+            <div class="disclaimer">
+                <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                <p>Heads up: I'm just a high schooler who built this app. I'll do my best to keep your data safe, but proceed at your own risk.</p>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+                    Information We Collect
+                </h2>
+                <p>When you use College Advisor, we collect:</p>
+                <ul>
+                    <li>Your quiz answers about interests and preferences</li>
+                    <li>Messages you send to the AI assistant</li>
+                    <li>Scholarships, colleges, and programs you save</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                    How We Use Your Information
+                </h2>
+                <p>We use this information to:</p>
+                <ul>
+                    <li>Give you personalized college major recommendations</li>
+                    <li>Suggest relevant scholarships and colleges</li>
+                    <li>Improve the app</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"/></svg>
+                    Data Storage
+                </h2>
+                <p>Your data is stored on our servers in a PostgreSQL database. AI conversations are processed through Anthropic's Claude API.</p>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Third-Party Services
+                </h2>
+                <p>We use <a href="https://www.anthropic.com/privacy">Anthropic Claude AI</a> for recommendations.</p>
+            </div>
+
+            <div class="footer">
+                <p><span class="app-name">College Advisor</span></p>
+            </div>
+        </div>
     </div>
-
-    <h2>Information We Collect</h2>
-    <p>When you use College Advisor, we collect:</p>
-    <ul>
-        <li>Your quiz answers about interests and preferences</li>
-        <li>Messages you send to the AI assistant</li>
-        <li>Scholarships, colleges, and programs you save</li>
-    </ul>
-
-    <h2>How We Use Your Information</h2>
-    <p>We use this information to:</p>
-    <ul>
-        <li>Give you personalized college major recommendations</li>
-        <li>Suggest relevant scholarships and colleges</li>
-        <li>Improve the app</li>
-    </ul>
-
-    <h2>Data Storage</h2>
-    <p>Your data is stored on our servers in a PostgreSQL database. AI conversations are processed through Anthropic's Claude API.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>We use <a href="https://www.anthropic.com/privacy">Anthropic Claude AI</a> for recommendations.</p>
-
 </body>
 </html>
